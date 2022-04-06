@@ -15,16 +15,37 @@
 
 <body>
     <h1></h1>
-    {% for book in books %}
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-                <div class="col-md-4">
-                    <img src="{{book.Картинка}}" class="card-img" alt="{{book.Заголовок}} book_image">
+    {% for book_group in books %}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="{{book_group[0].Картинка}}" class="card-img" alt="{{book_group[0].Заголовок}} book_image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{book_group[0].Заголовок}}</h5>
+                                    <p class="card-author">{{book_group[0].Автор}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h5 class="card-title">{{book.Заголовок}}</h5>
-                        <p class="card-author">{{book.Автор}}</p>
+                <div class="col-6">
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img src="{{book_group[1].Картинка}}" class="card-img" alt="{{book_group[1].Заголовок}} book_image">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{book_group[1].Заголовок}}</h5>
+                                    <p class="card-author">{{book_group[1].Автор}}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
