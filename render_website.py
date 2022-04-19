@@ -15,7 +15,7 @@ COL_NUMBER = 2
 
 def get_img_name(books):
     for book in books:
-        img_path = urlparse(book['Картинка']).path
+        img_path = urlparse(book['image_url']).path
         img_name = os.path.basename(img_path)
         book['img_name'] = img_name
 

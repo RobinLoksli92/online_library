@@ -55,16 +55,16 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="..\media\images\{{book_group[0].id}}_{{book_group[0].img_name}}" class="card-img" alt="{{book_group[0].Заголовок}} book_image">
+                                <img src="..\media\images\{{book_group[0].img_name}}" class="card-img" alt="{{book_group[0].title}}">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{book_group[0].Заголовок}}</h5>
-                                    <p class="card-author">{{book_group[0].Автор}}</p>
-                                    {% for genre in book_group[0].Жанр %}
+                                    <h5 class="card-title">{{book_group[0].title}}</h5>
+                                    <p class="card-author">{{book_group[0].author}}</p>
+                                    {% for genre in book_group[0].genre %}
                                         <h6><span class="badge badge-pill badge-light">{{genre}}</span></h6>
                                     {% endfor %}
-                                    <a href="..\media\books\{{book_group[0].Заголовок}}_{{book_group[0].id}}.txt" target="_blank">Читать</a>
+                                    <a href="..\media\books\{{book_group[0].id}}.txt" target="_blank">Читать</a>
                                 </div>
                             </div>
                         </div>
@@ -74,16 +74,16 @@
                     <div class="card mb-3" style="max-width: 540px;">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img src="..\media\images\{{book_group[1].id}}_{{book_group[1].img_name}}" class="card-img" alt="{{book_group[1].Заголовок}} book_image">
+                                <img src="..\media\images\{{book_group[1].img_name}}" class="card-img" alt="{{book_group[1].title}}">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">{{book_group[1].Заголовок}}</h5>
-                                    <p class="card-author">{{book_group[1].Автор}}</p>
-                                    {% for genre in book_group[1].Жанр %}
+                                    <h5 class="card-title">{{book_group[1].title}}</h5>
+                                    <p class="card-author">{{book_group[1].author}}</p>
+                                    {% for genre in book_group[1].genre %}
                                         <h6><span class="badge badge-pill badge-light">{{genre}}</span></h6>
                                     {% endfor %}
-                                    <a href="..\media\books\{{book_group[1].Заголовок}}_{{book_group[1].id}}.txt" target="_blank">Читать</a>
+                                    <a href="..\media\books\{{book_group[1].id}}.txt" target="_blank">Читать</a>
                                 </div>
                             </div>
                         </div>
